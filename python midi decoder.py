@@ -8,6 +8,9 @@ track = ["note_on", "74", "velocity=42", "3072", "note_off", "74", "velocity=0",
 
 i = 0
 
+for n in range(int(round(int(track[3]) / 96))):
+    print("0")
+
 while (i < len(track)-4):
     if (track[i] == "note_on"):
         
